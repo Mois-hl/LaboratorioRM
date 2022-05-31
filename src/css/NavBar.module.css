@@ -1,0 +1,29 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px;
+  background-color: white;
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.listLinks{
+  display: flex;
+  list-style-type: none;
+}
+
+.listLinks a{
+  color: #000;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.listLinks a:hover{
+  color: #800040;
+}

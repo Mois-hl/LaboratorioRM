@@ -6,34 +6,10 @@
 
 html,
 body{
-  background-color: #f4f5f6;
+  background-color: #f4f4f4;
 }
 
-.navbar-contenedor{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 120px;
-  background-color: white;
-}
-
-ul{
-  display: flex;
-  list-style-type: none;
-}
-a{
-  color: black;
-  text-decoration: none;
-  margin-right: 10px;
-}
-.is-active{
+.isActive{
   font-weight: bold;
-  cursor: pointer;
-}
-
-.navbar-titulo{
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  color: #800040!important;
 }
