@@ -2,6 +2,7 @@ import { NavLink } from "./NavLink";
 import logoIPN from "../images/IPN-logo.png";
 import logocic from "../images/cic-logo.png";
 import styles from "../css/HomePage.module.css";
+import { ImageHome } from "./ImageHome";
 
 export const HomePage = () => {
   return (
@@ -21,12 +22,12 @@ export const HomePage = () => {
           <div className={styles.headerImages}>
             <img
               style={{ marginRight: 20 }}
-              height={90}
+              height={100}
               src={logoIPN}
               alt='logo ipn'
             />
             <img
-              height={90}
+              height={100}
               src={logocic}
               alt='logo ipn'
             />
@@ -78,13 +79,15 @@ export const HomePage = () => {
         </div>
         <h3 className={styles.homepageSubtitulo}>Fotos del laboratorio</h3>
         <div className={styles.homepageFotos}>
-          <img
-            src={require('../images/flrm2.jpg')}
-            alt='Foto del laboratorio'
-          />
-            <p style={{ textAlign: 'center', fontSize: 20 }}>
-              Presentación del Laboratorio de Robótica y Mecatrónica en el OpenLabs-CIC, 8 de noviembre 2019.
-            </p>
+          <ImageHome imagen='1'/>
+        </div>
+        <h3 className={styles.homepageSubtitulo}>Grupo de trabajo</h3>
+        <div className={ styles.homepageGrupo }>
+        <p>Dr. Juan Humberto Sossa Azuela, SNI III, humbertosossa@gmail.com</p>
+        <p>Dr. Carlos F. Aguilar Ibáñez, SNI II, carlosaguilari@cic.ipn.mx</p>
+        <p>Dra. Elsa Rubio Espino, erubio@cic.ipn.mx</p>
+        <p>Dr. Erik Zamora, SNI C, ezamora1981@gmail.com</p>
+        <p>Dr. Jesús Yaljá Montiel Pérez, yalja@ipn.mx</p>
         </div>
       </div>
     </>

@@ -94,8 +94,8 @@
 
 .homepageFotos{
   display: flex;
-  margin: 0 40px;
-  align-items: center;
+  flex-direction: column;
+  margin: 0 55px;
 }
 .homepageFotos img{
   width: 700px;
@@ -103,3 +103,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.homepageGrupo{
+  font-size: 18px;
+}
