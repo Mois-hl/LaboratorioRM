@@ -95,14 +95,10 @@
 .homepageFotos{
   display: flex;
   flex-direction: column;
-  margin: 0 55px;
-}
-.homepageFotos img{
-  width: 700px;
-  max-height: 500px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 90px;
 }
 
 .homepageGrupo{
   font-size: 18px;
+  text-align: center;
 }
