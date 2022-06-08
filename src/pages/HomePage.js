@@ -1,8 +1,8 @@
-import { NavLink } from "./NavLink";
+import { NavLink } from "../components/NavLink";
 import logoIPN from "../images/IPN-logo.png";
 import logocic from "../images/cic-logo.png";
 import styles from "../css/HomePage.module.css";
-import { ImageHome } from "./ImageHome";
+import { ImageHome } from "../components/ImagesLab";
 
 export const HomePage = () => {
   return (
@@ -79,16 +79,13 @@ export const HomePage = () => {
         </div>
         <h3 className={styles.homepageSubtitulo}>Fotos del laboratorio</h3>
         <div className={styles.homepageFotos}>
-          <ImageHome 
-            imagen='1'
+          <ImageHome
             texto='Presentación del Laboratorio de Robótica y Mecatrónica en el OpenLabs-CIC, 8 de noviembre 2019.' 
           />
-          <ImageHome 
-            imagen='2'
+          <ImageHome
             texto='Semana Nacional del Emprendedor,  Ecosistema de Innovación y Tecnología IPN, 13-14 de Septiembre 2018. David y Jacobo.' 
           />
-          <ImageHome 
-            imagen='3'
+          <ImageHome
             texto='Reunión  con integrantes de la Red de Computación, Red de Expertos  en Robótica y Mecatrónica y la Red de Salud del IPN. 16 agosto 2018.' 
           />
         </div>

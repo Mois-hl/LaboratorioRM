@@ -1,6 +1,6 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
-import { HomePage } from './components/HomePage';
+import { HomePage } from './pages/HomePage';
 import './App.css';
 
 const About = ({ nombre }) => <h1>{nombre}</h1>;

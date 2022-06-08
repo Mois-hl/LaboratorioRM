@@ -2,10 +2,10 @@ import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
-import { images } from "./image-data";
+import { images } from "../data/image-data";
 
 const variants = {
-  enter: (direction: number) => {
+  enter: (direction) => {
     return {
       x: direction > 0 ? 700 : -1000,
       opacity: 0
@@ -16,7 +16,7 @@ const variants = {
     x: 0,
     opacity: 1
   },
-  exit: (direction: number) => {
+  exit: (direction) => {
     return {
       zIndex: 0,
       x: direction < 0 ? 700 : -1000,
@@ -32,11 +32,11 @@ const variants = {
  * just distance thresholds and velocity > 0.
  */
 const swipeConfidenceThreshold = 10000;
-const swipePower = (offset: number, velocity: number) => {
+const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-export const Example = () => {
+export const Slider = () => {
   const [[page, direction], setPage] = useState([0, 0]);
 
   // We only have 3 images, but we paginate them absolutely (ie 1, 2, 3, 4, 5...) and
@@ -45,7 +45,7 @@ export const Example = () => {
   // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
   const imageIndex = wrap(0, images.length, page);
 
-  const paginate = (newDirection: number) => {
+  const paginate = (newDirection) => {
     setPage([page + newDirection, newDirection]);
   };
 
@@ -61,8 +61,8 @@ export const Example = () => {
           animate="center"
           exit="exit"
           transition={{
-            x: { type: "spring", stiffness: 300, damping: 30 },
-            opacity: { duration: 0.2 }
+            x: { type: "spring", stiffness: 400, damping: 40 },
+            opacity: { duration: 0.1 }
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
@@ -79,10 +79,10 @@ export const Example = () => {
         />
       </AnimatePresence>
       <div className="next" onClick={() => paginate(1)}>
-        {"‣"}
+        {">"}
       </div>
       <div className="prev" onClick={() => paginate(-1)}>
-        {"‣"}
+        {"<"}
       </div>
     </>
   );
