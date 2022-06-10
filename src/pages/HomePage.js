@@ -82,8 +82,8 @@ export const HomePage = () => {
         <div className={styles.homepageFotos}>
           <ImagesLab
             titulo='Sistema integral para el monitoreo remoto del estado general de salud de personas y sanitizado desde su hogar,' 
-            fecha='30 de marzo 2022.'
-            imagenes={[ require('../images/1.jpeg'), require('../images/2.jpeg'), require('../images/3.jpeg'), require('../images/4.jpeg'), require('../images/5.jpeg'), require('../images/6.jpeg') ]}
+            fecha='30 de mayo 2022.'
+            imagenes={[ require('../images/1.jpeg'), require('../images/2.jpeg'), require('../images/3.jpeg'), require('../images/4.jpeg'), require('../images/5.jpeg') ]}
           />
           <ImagesLab
             titulo='Presentación del Laboratorio de Robótica y Mecatrónica en el OpenLabs-CIC,' 
@@ -96,7 +96,7 @@ export const HomePage = () => {
           <ul>
             <li><p>Dr. Juan Humberto Sossa Azuela, SNI III,<span style={{ fontWeight: 'bold' }}> humbertosossa@gmail.com</span></p></li>
             <li><p>Dr. Carlos F. Aguilar Ibáñez, SNI II,<span style={{ fontWeight: 'bold' }}> carlosaguilari@cic.ipn.mx</span></p></li>
-            <li><p>Dra. Elsa Rubio Espino,<span style={{ fontWeight: 'bold' }}> erubio@cic.ipn.mx</span></p></li>
+            <li><p>Dra. Elsa Rubio Espino, SNI I,<span style={{ fontWeight: 'bold' }}> erubio@cic.ipn.mx</span></p></li>
             <li><p>Dr. Erik Zamora, SNI I,<span style={{ fontWeight: 'bold' }}> ezamora1981@gmail.com</span></p></li>
             <li><p>Dr. Jesús Yaljá Montiel Pérez,<span style={{ fontWeight: 'bold' }}> yalja@ipn.mx</span></p></li>
             <li><p>Dr. Ponciano Jorge Escamilla Ambrosio,<span style={{ fontWeight: 'bold' }}> pescamillaa@ipn.mx </span></p></li>
