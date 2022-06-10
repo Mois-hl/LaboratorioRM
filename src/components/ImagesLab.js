@@ -1,21 +1,15 @@
-import React from "react";
 import styles from '../css/ImageLab.module.css';
 import { Slider } from "./Slider";
 
-export const ImageHome = ({ texto }) => {
+export const ImagesLab = ({ titulo, fecha, imagenes }) => {
   return (
     <div className={ styles.fotosLab }>
       <div className='example-container'>
-          <Slider />
+          <Slider 
+            images={imagenes}
+          />
       </div>
-      <div className={ styles.textoFotos }>
-        <p>
-          {texto}
-        </p>
-        <p style={{ alignSelf: 'flex-end' }}>
-          <strong>fecha de hoy</strong>
-        </p>
-      </div>
+      <p>{titulo} <strong>{fecha}</strong></p>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { NavLink } from "../components/NavLink";
 import logoIPN from "../images/IPN-logo.png";
 import logocic from "../images/cic-logo.png";
 import styles from "../css/HomePage.module.css";
-import { ImageHome } from "../components/ImagesLab";
+import { ImagesLab } from "../components/ImagesLab";
 
 export const HomePage = () => {
   return (
@@ -57,6 +57,7 @@ export const HomePage = () => {
               <li>Control clásico</li>
               <li>Control difuso</li>
               <li>Cómputo evolutivo</li>
+              <li>Cómputo cuántico</li>
               <li>Modelado y control de robots</li>
               <li>Reconocimiento de patrones</li>
               <li>Redes neuronales y memorias asociativas</li>
@@ -79,23 +80,27 @@ export const HomePage = () => {
         </div>
         <h3 className={styles.homepageSubtitulo}>Fotos del laboratorio</h3>
         <div className={styles.homepageFotos}>
-          <ImageHome
-            texto='Presentación del Laboratorio de Robótica y Mecatrónica en el OpenLabs-CIC, 8 de noviembre 2019.' 
+          <ImagesLab
+            titulo='Sistema integral para el monitoreo remoto del estado general de salud de personas y sanitizado desde su hogar,' 
+            fecha='30 de marzo 2022.'
+            imagenes={[ require('../images/1.jpeg'), require('../images/2.jpeg'), require('../images/3.jpeg'), require('../images/4.jpeg'), require('../images/5.jpeg'), require('../images/6.jpeg') ]}
           />
-          <ImageHome
-            texto='Semana Nacional del Emprendedor,  Ecosistema de Innovación y Tecnología IPN, 13-14 de Septiembre 2018. David y Jacobo.' 
-          />
-          <ImageHome
-            texto='Reunión  con integrantes de la Red de Computación, Red de Expertos  en Robótica y Mecatrónica y la Red de Salud del IPN. 16 agosto 2018.' 
+          <ImagesLab
+            titulo='Presentación del Laboratorio de Robótica y Mecatrónica en el OpenLabs-CIC,' 
+            fecha='8 de noviembre 2019.'
+            imagenes={ [require('../images/flrm1.jpg'), require('../images/flrm2.jpg'), require('../images/flrm3.jpg')] }
           />
         </div>
         <h3 className={styles.homepageSubtitulo}>Grupo de trabajo</h3>
         <div className={ styles.homepageGrupo }>
-          <p>Dr. Juan Humberto Sossa Azuela, SNI III, <span style={{ fontWeight: 'bold' }}>humbertosossa@gmail.com</span></p>
-          <p>Dr. Carlos F. Aguilar Ibáñez, SNI II,<span style={{ fontWeight: 'bold' }}> carlosaguilari@cic.ipn.mx</span></p>
-          <p>Dra. Elsa Rubio Espino,<span style={{ fontWeight: 'bold' }}> erubio@cic.ipn.mx</span></p>
-          <p>Dr. Erik Zamora, SNI C,<span style={{ fontWeight: 'bold' }}> ezamora1981@gmail.com</span></p>
-          <p>Dr. Jesús Yaljá Montiel Pérez,<span style={{ fontWeight: 'bold' }}> yalja@ipn.mx</span></p>
+          <ul>
+            <li><p>Dr. Juan Humberto Sossa Azuela, SNI III,<span style={{ fontWeight: 'bold' }}> humbertosossa@gmail.com</span></p></li>
+            <li><p>Dr. Carlos F. Aguilar Ibáñez, SNI II,<span style={{ fontWeight: 'bold' }}> carlosaguilari@cic.ipn.mx</span></p></li>
+            <li><p>Dra. Elsa Rubio Espino,<span style={{ fontWeight: 'bold' }}> erubio@cic.ipn.mx</span></p></li>
+            <li><p>Dr. Erik Zamora, SNI I,<span style={{ fontWeight: 'bold' }}> ezamora1981@gmail.com</span></p></li>
+            <li><p>Dr. Jesús Yaljá Montiel Pérez,<span style={{ fontWeight: 'bold' }}> yalja@ipn.mx</span></p></li>
+            <li><p>Dr. Ponciano Jorge Escamilla Ambrosio,<span style={{ fontWeight: 'bold' }}> pescamillaa@ipn.mx </span></p></li>
+          </ul>
         </div>
       </div>
     </>
