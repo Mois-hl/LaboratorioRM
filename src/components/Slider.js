@@ -6,7 +6,7 @@ import { wrap } from "popmotion";
 const variants = {
   enter: (direction) => {
     return {
-      x: direction > 0 ? 700 : -1000,
+      x: direction > 0 ? 100 : -1000,
       opacity: 0
     };
   },

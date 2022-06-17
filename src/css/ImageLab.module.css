@@ -6,9 +6,20 @@
   background-color: #fff; 
   border-radius: 16px;
 }
+@media (max-width: 720px) {
+    .fotosLab{
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .fotosLab p{
   text-align: center;
   font-size: 21px;
   padding: 0 40px;
 }
-
+@media (max-width: 720px) {
+  .fotosLab p{
+    font-size: 17px;
+    padding: 0 8px 12px 8px;
+  }
+}
