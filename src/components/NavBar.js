@@ -27,7 +27,7 @@ export const NavBar = () => {
         <nav>
           <ul className={ styles.listLinks }>
             <li><NavLink to='/' >Inicio</NavLink></li>
-            <li><NavLink to='/seminario' >Seminario</NavLink></li>
+            <li><NavLink to='/Seminario' >Seminario</NavLink></li>
             <li><NavLink to='/reconocimientos' >Reconocimientos</NavLink></li>
             <li><NavLink to='/proyectos' >Proyectos</NavLink></li>
             <li><NavLink to='/alumnos' >Alumnos</NavLink></li>

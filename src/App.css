@@ -23,6 +23,12 @@ body{
   align-items: center;
 }
 
+@media (max-width: 720px) {
+  .example-container{
+    height: 250px;
+  }
+}
+
 .next,
 .prev {
   position: absolute;

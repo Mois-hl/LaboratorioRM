@@ -1,6 +1,7 @@
 import { NavLink } from "../components/NavLink";
 import logoIPN from "../images/IPN-logo.png";
 import logocic from "../images/cic-logo.png";
+import logoLab from "../images/logoLab.png";
 import styles from "../css/HomePage.module.css";
 import { ImagesLab } from "../components/ImagesLab";
 
@@ -11,23 +12,23 @@ export const HomePage = () => {
         <nav className={styles.navbar}>
           <ul className={styles.listLinks}>
             <li><NavLink to='/' >Inicio</NavLink></li>
-            <li><NavLink to='/seminario' >Seminario</NavLink></li>
-            <li><NavLink to='/reconocimientos' >Reconocimientos</NavLink></li>
-            <li><NavLink to='/proyectos' >Proyectos</NavLink></li>
-            <li><NavLink to='/alumnos' >Alumnos</NavLink></li>
-            <li><NavLink to='/publicaciones' >Publicaciones</NavLink></li>
+            <li><a href="/">Seminario</a></li>
+            <li><a href="/">Reconocimientos</a></li>
+            <li><a href="/">Proyectos</a></li>
+            <li><a href="/">Alumnos</a></li>
+            <li><a href="/">Publicaciones</a></li>
           </ul>
         </nav>
         <div className={styles.headerContenedor}>
           <div className={styles.headerImages}>
             <img
               style={{ marginRight: 20 }}
-              height={100}
+              height={110}
               src={logoIPN}
               alt='logo ipn'
             />
             <img
-              height={100}
+              height={110}
               src={logocic}
               alt='logo ipn'
             />
@@ -103,6 +104,24 @@ export const HomePage = () => {
           </ul>
         </div>
       </div>
+      <footer className={ styles.footer}>
+        <div>
+          <img 
+            src={logoLab}
+            alt='logo cic'
+          />
+        </div>
+        <div>
+          <p>Instituto Politécnico Nacional</p>
+          <p>Centro de Investigación en Computación</p>
+          <p>Laboratorio de Robótica y Mecatrónica</p>
+        </div>
+        <div>
+          <p><strong>Dirección</strong></p>
+          <p>Av. Juan de Dios Bátiz, esq. Miguel Othón de Mendizábal,</p>
+          <p>Col.Nueva Industrial Vallejo, Alcaldía Gustavo A. Madero,<br></br> C.P. 07738, CDMX</p>
+        </div>
+      </footer>
     </>
   );
 }

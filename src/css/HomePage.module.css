@@ -3,7 +3,7 @@
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-blend-mode: darken;
   background-attachment: fixed;
 }
@@ -125,7 +125,7 @@
 
 @media (max-width: 720px) {
   .homepageSubtitulo{
-    margin: 0 5px;
+    margin: 15px 5px;
   }
 }
 
@@ -149,5 +149,33 @@
   .homepageGrupo{
     font-size: 14px;
     margin-left: 20px;
+  }
+}
+
+.footer{
+  margin-top: 90px;
+  width: 100%;
+  height: 220px;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.footer img{
+  height: 130px;
+}
+
+@media (max-width: 720px) {
+  .footer{
+    flex-direction: column;
+    height: 380px;
+    font-size: 14px;
+  }
+
+  .footer img{
+    height: 90px;
   }
 }
