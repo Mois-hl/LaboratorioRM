@@ -1,35 +1,49 @@
 import { NavLink } from "../components/NavLink";
-import logoIPN from "../images/IPN-logo.png";
-import logocic from "../images/cic-logo.png";
 import logoLab from "../images/logoLab.png";
 import styles from "../css/HomePage.module.css";
 import { ImagesLab } from "../components/ImagesLab";
+import { useState } from "react";
 
 export const HomePage = () => {
+  const [isMenuActive, setMenuActive] = useState(true);
+
+  const handleMenu = () => {
+    setMenuActive(isMenuActive ? false: true);
+  }
+
+  const ListLinksMenu = () => {
+    return(
+      <>
+      
+        <ul className={isMenuActive ? styles.listLinks : undefined }>
+          <li><NavLink to='/' >Inicio</NavLink></li>
+          <li><a href="/">Seminario</a></li>
+          <li><a href="/">Reconocimientos</a></li>
+          <li><a href="/">Proyectos</a></li>
+          <li><a href="/">Alumnos</a></li>
+          <li><a href="/">Publicaciones</a></li>
+        </ul>
+      </>
+    );
+  }
+
   return (
     <>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <ul className={styles.listLinks}>
-            <li><NavLink to='/' >Inicio</NavLink></li>
-            <li><a href="/">Seminario</a></li>
-            <li><a href="/">Reconocimientos</a></li>
-            <li><a href="/">Proyectos</a></li>
-            <li><a href="/">Alumnos</a></li>
-            <li><a href="/">Publicaciones</a></li>
-          </ul>
+          <div className={styles.barsMenu} onClick={handleMenu}>
+            <span className={isMenuActive ? styles.activeline1Bars : undefined}></span>
+            <span className={isMenuActive ? styles.activeline2Bars : undefined}></span>
+            <span className={isMenuActive ? styles.activeline3Bars : undefined}></span>
+          </div>
+          { isMenuActive ? <ListLinksMenu /> : undefined }
         </nav>
         <div className={styles.headerContenedor}>
-          <div className={styles.headerImages}>
+          <div>
             <img
               style={{ marginRight: 20 }}
-              height={110}
-              src={logoIPN}
-              alt='logo ipn'
-            />
-            <img
-              height={110}
-              src={logocic}
+              height={140}
+              src={logoLab}
               alt='logo ipn'
             />
           </div>
