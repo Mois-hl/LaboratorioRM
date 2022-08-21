@@ -1,10 +1,10 @@
 .navbar{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 120px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .titulo{
@@ -21,9 +21,13 @@
 .listLinks a{
   color: #000;
   text-decoration: none;
-  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background 600ms ease;
+  margin-right: 5px;
 }
 
 .listLinks a:hover{
   color: #800040;
+  background: #d6d6d6;
 }
