@@ -245,3 +245,14 @@
   opacity: 0;
   transform: translateX(-190px);
 }
+
+.BackToTop{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  transition: all 300ms ease;
+}

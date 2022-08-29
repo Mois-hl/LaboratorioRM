@@ -3,6 +3,8 @@ import logoLab from "../images/logoLab.png";
 import styles from "../css/HomePage.module.css";
 import { useState } from "react";
 import LisImages from "../components/ListImages";
+import BackToTop from "react-back-to-top-button";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 export const HomePage = () => {
   const [isMenuActive, setMenuActive] = useState(true);
@@ -106,6 +108,14 @@ export const HomePage = () => {
           </ul>
         </div>
       </div>
+      <BackToTop
+        showOnScrollUp
+        showAt={100}
+        speed={100}
+        easing="easeOutSine"
+      >
+        <span className={styles.BackToTop}><AiOutlineArrowUp style={{ color: '#fff', fontSize: 30 }} /></span>
+      </BackToTop>
       <footer className={ styles.footer}>
         <div>
           <img 
